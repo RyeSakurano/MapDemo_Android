@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="demo_type">TYPE</string>
+
+    <string name="demo_type_basic">地图</string>
+    <string name="demo_label_show_map">地图</string>
+    <string name="demo_description_show_map"> 在 Activity 中使用 MapView 展示地图</string>
+</resources>

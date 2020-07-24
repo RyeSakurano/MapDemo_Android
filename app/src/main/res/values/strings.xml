@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Map Demo</string>
+    <string name="traffic_control">路况图开关</string>
+    <string name="dark_control">暗色模式</string>
+    <string name="threeD_control">3D模式</string>
+    <string name="aoi_control">显示AOI</string>
+    <string name="search_hint">输入关键字</string>
+    <string name="search_tab">搜索</string>
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapViewActivity">
+
+    <com.tencent.tencentmap.mapsdk.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_poi_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_poi_search"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search_poi"
+                android:paddingLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/search_hint"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_search_poi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_tab"
+                android:visibility="gone" />
+
+            <Switch
+                android:id="@+id/switch_aoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aoi_control" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lv_suggestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_search_poi"
+            android:layout_alignLeft="@+id/et_search_poi"
+            android:layout_alignRight="@+id/et_search_poi"
+            android:background="@android:color/white"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            tools:ignore="MissingConstraints">
+
+            <Switch
+                android:id="@+id/switch_traffic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/traffic_control" />
+
+            <Switch
+                android:id="@+id/switch_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dark_control" />
+
+            <Switch
+                android:id="@+id/switch_3D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/threeD_control" />
+        </LinearLayout>
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/imgview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp" />
+    </com.tencent.tencentmap.mapsdk.maps.MapView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
