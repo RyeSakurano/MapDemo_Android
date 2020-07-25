@@ -266,6 +266,7 @@ public class MapViewActivity extends AppCompatActivity {
                     @Override
                     public void onSnapshotReady(Bitmap bitmap) {
                         imageView.setImageBitmap(bitmap);
+                        imgaeView.setVisibility(View.VISIBLE);
                         // 截图显示3秒后消失
                         imageView.postDelayed(new Runnable() {
                             @Override
